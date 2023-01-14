@@ -1,0 +1,116 @@
+<p id="notice"><%= notice %></p>
+
+<header>
+  <h1>XXX</h1>
+
+</header>
+
+
+
+<body>
+<div class = "contents">
+<div class="side">
+
+<div class ="banner">
+  <a class="link" href="/">
+  <div class="box1">
+  <p>Top </p>
+  </div>
+  </a> 
+
+  <a class="link" href="/about">
+  <div class="box1">
+  <p>About us</p>
+  </div>
+  </a>
+  <a class="link" href="/concepts">
+  <div class="box1">
+  <p>Concepts</p>
+  </div>
+  </a>
+
+
+
+  <a class="link" href="/articles">
+  <div class="box1">
+  <p>Articles</p>
+  </div>
+  </a>
+  <a class="link" href="/options">
+  <div class="box1">
+  <p>Options</p>
+  </div>
+  </a>
+  <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdgxgTK4d5sgVsEkJptkRGm7DIuTdoKl0BUhj2VQl1WQNPcqQ/viewform">
+  <div class="box1">
+  <p>Contact us</p>
+  </div>
+  </a>
+  <div class ="space">
+  </div>
+
+
+  
+
+
+
+
+</div>
+</div>
+
+<main>
+
+
+<h1><%= @article.title %></h1>
+<p><%= @article.created_at %></p>
+<% if @article.subtitle %>
+    <h2><%= @article.subtitle %></h2>
+    <hr>
+<% else %>
+    <br>
+<% end %>
+
+
+<p><%= @article.body %></p>
+
+<% if @article.image_name %>
+    <%= image_tag @article.image_name %>
+<% else %>
+    <br>
+<% end %>
+<br>
+<% if @article.subtitle2 %>
+    <h2><%= @article.subtitle2 %></h2>
+    <hr>
+<% else %>
+    <br>
+<% end %>
+
+<p><%= @article.body2 %></p>
+<% if @article.image_name2 %>
+<%= image_tag @article.image_name2 %>
+<% else %>
+<br>
+<% end %>
+
+<p>
+<% if @lastarticle %>
+    前の記事：<a href="/articles/<%= @lastarticle.id %>">
+    <%= @lastarticle.title %>
+    </a>
+<% end %>
+<br>
+<% if @nextarticle %>
+    次の記事：<a href="/articles/<%= @nextarticle.id %>">
+    <%= @nextarticle.title %>
+    </a>
+<% end %>
+</p>
+
+</main>
+</div>
+<footer>
+ 
+    XXXXX
+</footer>
+</body>

@@ -1,0 +1,96 @@
+<p id="notice"><%= notice %></p>
+
+<head>
+<div class="header">
+  <h1>XXX</h1>
+  <hr>
+</div>
+</head>
+
+
+
+<article>
+<div class ="banner">
+  <div class="box1">
+      <%= link_to 'About us', '/about' %>
+  </div>
+  <br>
+  <div class="box1">
+      <%= link_to 'Concepts', '/concepts' %>
+  </div>
+  <br>
+  <div class="box1">
+      <%= link_to 'Options', '/about' %>
+  </div>
+  <br>
+  <div class="box1">
+      <%= link_to 'Contact us', '/about' %>
+  </div>
+</div>
+
+</article>
+
+
+
+<body>
+
+  <main>
+    <div class="title">
+    <h1>Contact us</h1>
+    </div>
+
+    <div class = "subtitle">
+      XXX
+      <hr>
+    </div>
+    <div class="text">
+      ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </div>
+    <br>
+
+    <div class = "subtitle">
+      XXX
+      <hr>
+    </div>
+    <div class="text">
+      ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </div>
+    <br>
+    <div class = "subtitle">
+      XXX
+      <hr>
+    </div>
+    <div class="text">
+      ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+    </div>
+    <br>
+    <p>フォーム</p>
+    <%= form_for(@user, url: "contact#index", method: :post) do |f| %>
+      <p>
+      <%= f.label :name, "アカウント名" %><br>
+      <%= f.text_field :name %>
+      </p>
+      <br>
+      <p>
+      <%= f.label :email, "メールアドレス" %><br>
+      <%= f.email_field :email %>
+      </p>
+      <br>
+      <p>
+      <%= f.label :password, "パスワード" %><br>
+      <%= f.password_field :password %>
+      </p>
+      <br>
+      <%= f.submit "登録する" %>
+    <% end %>
+
+    <p><%= @user %></p>
+
+
+  </main>
+  <footer>
+    <hr>
+    XXXXX
+  </footer>
+  
+</body>

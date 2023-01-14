@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<header>
+  <h1>XXX</h1>
+
+</header>
+
+
+
+
+
+<body>
+<div class = "contents">
+<div class="side">
+
+<div class ="banner">
+
+  <a class="link" href="/">
+  <div class="box1">
+  <p>Top </p>
+  </div>
+  </a>
+
+
+  <a class="link" href="/about">
+  <div class="box1">
+  <p>About us</p>
+  </div>
+  </a>
+  <a class="link" href="/concepts">
+  <div class="box1">
+  <p>Concepts</p>
+  </div>
+  </a>
+
+
+
+  <a class="link" href="/articles">
+  <div class="box1">
+  <p>Articles</p>
+  </div>
+  </a>
+  <a class="link" href="/options">
+  <div class="box1">
+  <p>Options</p>
+  </div>
+  </a>
+  <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdgxgTK4d5sgVsEkJptkRGm7DIuTdoKl0BUhj2VQl1WQNPcqQ/viewform">
+  <div class="box1">
+  <p>Contact us</p>
+  </div>
+  </a>
+  <div class ="space">
+  </div>
+
+
+  
+
+
+
+
+</div>
+</div>
+
+
+
+
+  <main>
+  <div class="title">
+  <h1>Articles</h1>
+  </div>
+  <p>勉強法や学習のコツに関する情報を不定期で発信していきます</p>
+  <div class = "list">
+  <ol>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+      <%= article.title %>
+      </a>
+      <% if @articles.last.id== article.id %>
+        <b><font color="red">New!!</font></b>
+      <% end %>
+    </li>
+  <% end %>
+  </ol>
+  </div>
+
+
+
+
+
+
+
+
+  
+
+</main>
+</div>
+<footer>
+
+  XXXXX
+</footer>
+
+</body>

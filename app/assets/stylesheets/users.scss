@@ -1,0 +1,175 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+header {
+    background-image:  linear-gradient(135deg, rgb(186, 254, 254) 25%, transparent 25%), linear-gradient(225deg, rgb(186, 254, 254)25%, transparent 25%), linear-gradient(45deg,  rgb(186, 254, 254)25%, transparent 25%), linear-gradient(315deg, rgb(186, 254, 254), rgb(244, 250, 250) 25%);
+    background-position:  20px 0, 20px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    height:10vh
+}
+body{
+
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+.contents{
+    flex:1;
+    display: flex;
+ 
+}
+main {
+
+    // background-image:  linear-gradient(135deg, #89f7c280 25%, transparent 25%), linear-gradient(225deg, #89f7c280 25%, transparent 25%), linear-gradient(45deg, #89f7c280 25%, transparent 25%), linear-gradient(315deg, #89f7c280 25%, #e1ffeb 25%);
+    // background-position:  20px 0, 20px 0, 0 0, 0 0;
+    // background-size: 20px 20px;
+    // background-repeat: repeat;
+  
+    padding-left:50px;
+    min-height: 100vh;
+    top:150px;
+    opicacy:50%;
+
+}
+main p{
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+.side{
+    background-color: #361d0ec4;
+    display: inline-block;
+    position: static;
+
+    margin-top:200 px;
+    width: 120px;
+    border: solid 1px #361d0ec4;
+
+
+}
+
+.img{
+    width:105%;
+}
+.top page {
+    width: 100%;
+    height: 100%;
+    border : 1px solid #000;
+    position: relative; /*相対位置*/
+}
+.top_text{
+    width:80%;
+    height:80%;
+    font-size : 40px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top:30%;
+    line-height: 40px;
+
+}
+.top_text h1{
+ /*文字の装飾*/
+    font-size : 40px;
+    line-height: 40px;
+ 
+}
+.top_text p{
+    /*文字の装飾*/
+    font-size : 32px;
+    line-height: 40px;
+    
+   }
+
+.top_image{
+    text-align:  center;
+    background-image: url("fig0.jpg");
+    display: inline-block;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+    width:80%;
+    height:80%;
+
+}
+
+.title {
+
+    font-size: 20px;
+    text-shadow: 4px 4px 2px #808080;
+}
+
+.subtitle {
+
+    font-size: 16px;
+}
+
+.banner{
+
+    position:static;
+    top:140px;
+
+    flex-flow: column;
+    min-height: 109vh;
+}
+.space{
+
+    flex:1;
+    min-height: 100vh;
+}
+
+.list li{
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+
+}
+
+img{
+    width:70%
+}
+
+
+.link p{
+    text-decoration: None;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+.box1 {
+    background-color: rgb(52, 133, 74); 
+    display: inline-block;
+    position: static;
+
+    top: 0px;
+    width: 120px;
+    height: 40px;
+
+    border: solid 1px #000000;
+
+}
+
+
+
+.box1:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+
+.text { 
+    
+}
+
+
+footer {
+    background-color: #7441044d;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 40px
+}
